@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title> RMVS - Res Visitors Management System.</title>
+<link rel="alternate" type="application/rss+xml" title="frittt.com" href="feed/index.html">
+<link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/font.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/prettify.css">
+</head>
+<body>
+<div class="wrapper">
+<nav>
+
+  	<div class="pull-left">
+    	<h1><a href="javascript:"><img src="img/icon.png" alt="Free Documentation Template Icon" /> <span>Documentation</span></a></h1>
+    </div>
+
+    <div class="pull-right">
+    	<a href="http://localhost/rvms/index.php" target="_blank" class="btn btn-download"><img src="img/download.png" width="25" alt="Demo Link" />Demo Link</a>
+    </div>
+
+</nav>
+<header>
+  <div class="container">
+    <h2 class="lone-header"><span>RVMS</span> -  Res Visitors Management System</h2>
+  </div>
+</header>
+<section>
+
+    <div class="container">
+        <ul class="docs-nav">
+            <img src="img/logo.png" alt="banner">
+            <li><strong>Getting Started</strong></li>
+            <li><a href="#welcome" class="cc-active">Project Info</a></li>
+            <li><a href="#what_is_this" class="cc-active">What is this project for?</a></li>
+            <li><a href="#features" class="cc-active">Features</a></li>
+            <li>
+                <a href="#install" class="cc-active">Installation</a>
+                <ul>
+                    <li><a href="#installation-apache">Apache</a></li>
+                    <li><a href="#installation-nginx">Nginx</a></li>
+                    <li><a href="#installation-localhost">Localhost</a></li>
+                </ul>
+            </li>
+            <li><a href="#quick_start_guide" class="cc-active">Quick Start Guide</a></li>
+            <li><a href="#smtp" class="cc-active">Literature</a></li>
+            <li class="separator"></li>
+            <li><strong>Knowledge</strong></li>
+            <li><a href="#settings" class="cc-active">Settings</a></li>
+
+            <li><strong>Other</strong></li>
+            <li><a href="#credit" class="cc-active">Credit</a></li>
+            <li><a href="#contact" class="cc-active">How to contact us?</a></li>
+
+        </ul>
+
+        <div class="docs-content">
+            <div style="">
+              <img  style="width:800px; position:absolute;" src="img/banner.png" alt="banner">
+            </div>
+            <h3 id="welcome" style="padding-top:500px;"> Getting Started</h3>
+            <div id="documenter_buttons">
+              <a href="http://localhost/rvms/index.php" class="btn btn-primary btn-large" role="button">Live Demo</a>
+            </div>
+            <ul>
+            <li>Created: 09/May/2020</li>
+            <li>Version: <span class="link">1.0</span></li>
+            <li>Author: Albert Kopakae ( <a href="https://www.linkedin.com/in/albert-kopakae-6ba704183/" class="link">Linkedin Profile</a> )</li>
+       
+            </ul>
+
+            <h3 id="what_is_this"> What is this?</h3>
+            <p class="whatis">
+                RVMS - Visitor Management System is a system for all kind of
+                company or business organizations.
+                The system can capture and retrieve number of visits as well as analyze the visit for other uses such as determining the person who often visit a particular student. The system will help in time management and to avoid fraud at campus res since it consist of AI which will keep records of the particular Guard working that time and number of student who visited during his/her working hours which can all be retrieved and printed in seconds. 
+            </p>
+            <section>
+                <h3 id="features"> features</h3>
+                <p>Visitor Management is one of the very important aspects of security management. It helps in capturing the details about the visitors in a systematic manner and maintains a repository of the same. Visitor Management is a process of allowing visitors to enter the premises based on appointment, creation of identification badges and managing the Security staff deployment for effective control over the security.</p>
+                <pre>
+- Ease of Use.
+- Notifications that Match Receivers' Preferences.
+- Preregistration and Repeat Visitor Features.
+- Visitor Photo Capture.
+- Visitor Badge Printing.
+- Cloud-Based Visitor Logbook.
+- Secured Data.
+- Fast Processes More visitors in less time span
+- Improve visitor service Because they are pre-registered or can be -
+- registered quickly, visitors are made to feel expected and welcome.
+- Appointment scheduler A centralized web-based appointment scheduler
+- Alerts Email
+</pre>
+                <h4>Send notifications</h4>
+                <p>Send visitors and hosts a friendly text or email reminder during their visit, at check-in and at check out.</p>
+               
+                <h4>Visitor Management</h4>
+                <p>Makes managing visitor information a breeze. Your employees have access to the information they need, making visitor management smooth and easy.</p>
+                <h4>Visitor recognition</h4>
+                <p>Make your visitors feel truly welcome. Your visitor's name will be displayed on the screen as they check in and the app can remember details, like how they like their drink. They are not just any visitor</p>
+                <h4> Security </h4>
+                <p>Alert key people when a visitor checks in or forgets to check out, or just about a specific visit. Make visitors aware of safety and confidentiality rules, keeping your facilities and data safe.</p>
+                <h4> Data protection </h4>
+                <p>Your data is safe with us. It is backed up daily across multiple servers, so you can have access to it even if there is a hardware issue. It is also yours to keep. You can, at any time, retrieve all your data.</p>
+                <h4> Reports </h4>
+                <p>Collect data and spot trends, produce reports and use surveys to gather feedback from your visitors. All this information can be used to help you improve the visitor experience.</p>
+            </section>
+
+            <section>
+                <h3 id="install">Installation</h3>
+
+                <strong>Before install, please make sure you have the components bellow enable on your server</strong>
+                <pre>
+<code>
+PHP 7.1.3 or greater
+OpenSSL PHP Extension
+PDO PHP Extension
+Mbstring PHP Extension
+Tokenizer PHP Extension
+XML PHP Extension
+Ctype PHP Extension
+JSON PHP Extension
+BCMath PHP Extension
+GD PHP Extension (or Imagick PHP Extension)
+PHP Fileinfo extension
+PHP Zip Archive
+Rewrite Module (Apache or Nginx)
+</code>
+                </pre>
+                <strong>PHP.INI Requirements</strong>
+                <pre>
+<code>
+open_basedir must be disabled
+</code>
+                </pre>
+                <strong>File and folder permissions</strong>
+                <pre>
+<code>
+/bootstrap        775
+/storage          775 (recursively)
+</code>
+                </pre>
+
+                <br>
+                <div class="alert text-warning" role="alert" style="color: orange;">
+                    <strong>Note:</strong>
+                    Remember! The the System doesn't have any "install" folder or directory. The installation is controlled by a Controller.
+                </div>
+
+                <h3 id="installation-apache"><strong>Installation with Apache</strong></h3>
+                <h4><strong>Creating a new Database</strong></h4>
+
+                <p>First thing you want to do before installing <strong>RVMS</strong> is to create a new database on your mysql server. If you already know how to do this/or have already created one just skip to the next step.</p>
+                <p>Your hosting provider will most likely have <strong>phpMyAdmin</strong> as mysql manager. If that is the case here is a step by step guide (if not the process will be very similar on other managers).</p>
+                <p>Login to your control panel, find and click phpMyAdmin link.</p>
+                <p>Click on the database tab in the top menu, enter any name for your database and click create.</p>
+
+                <h4><strong>Uploading Files</strong></h4>
+
+                <p>After creating a database, unzpip the file  and upload the <strong>contents</strong> of <strong>RVMS</strong> folder to your server root, usually <code>/path/to/www/</code> or <code>/path/to/html/</code> or <code>/path/to/public_html/</code>.</p>
+
+                <div class="alert alert-warning" role="alert">
+                    <strong>Important:</strong>
+                    Always use a desktop application like <a href="https://filezilla-project.org/" target="_blank" rel="noopener noreferrer">FileZilla</a> to upload files to FTP as opposed to web based file managers to avoid issues with corrupted or not properly uploaded files.
+                </div>
+
+                <div class="alert alert-warning" role="alert">
+                    <strong>Important:</strong>
+                    Make sure that <strong>.htaccess</strong> file got copied properly from the download to main RVMS folder on your server.
+                </div>
+
+                <h4><strong>Launch the Installer</strong></h4>
+
+                <p>After you created a database and uploaded the files, simply open up your site in the browser (like <strong>http://yoursite.com</strong>, you will redirect to <strong>http://yoursite.com/index.php</strong>) and follow on-screen instructions to complete the installation.</p>
+
+                <h3 id="installation-nginx"><strong>Installation with Nginx</strong></h3>
+                <ul>
+                    <li>Put all the RVMS package files to your server root, usually <code>/path/to/www/</code> or <code>/path/to/html/</code> or <code>/path/to/public_html/</code> and set your server configuration like this:</li>
+                </ul>
+                <pre>
+<code>
+root "/var/www/public";
+location / {
+   try_files $uri $uri/ /index.php?$query_string;
+}
+</code>
+                </pre>
+                <ul>
+                    <li>Then restart Nginx.</li>
+                    <li>Create a MySQL database, add user to it with full permissions.</li>
+                    <li>Go to the script's installation URL. For example <code>http://yoursite.com/index.php</code></li>
+                    <li>And follow the web installation wizard.</li>
+                </ul>
+
+                <h3 id="installation-localhost"><strong>Installation on localhost</strong></h3>
+                <ul>
+                    <li>
+                        You have to create a local virtual host by using a domain name (eg. <code>http://yoursite.localhost</code>) instead of localhost (<code>http://localhost/yoursite</code>).<br>
+                        For more information, Using a domain name instead of localhost with XAMPP, WAMP or MAMP
+                    </li>
+                    <li>Restart your server.</li>
+                    <li>Create a MySQL database and rename it CVMSDB, add user to it with full permissions.</li>
+                    <li>Go to the script's installation URL. For example <code>http://yoursite.localhost/index.php</code></li>
+                    <li>And follow the web installation wizard.</li>
+                </ul>
+
+            </section>
+
+            <section>
+                <h3 id="quick_start_guide">Quick Start Guide</h3>
+                <h4>Front-end First Page</h4>
+                <img src="screenshots/dash1.png" alt="Check-in First Page">
+                <h4>Dashboard</h4>
+                <img src="screenshots/dash2.png" alt="Check-in First step">
+                <h4>Add new Visitor</h4>
+                <img src="screenshots/dash6.png" alt="Check-in Second step">
+                <h4>Filter Visitors by date</h4>
+                <img src="screenshots/dash4.png" alt="Check-in third step">
+                <h4>Manage Visitors</h4>
+                <img src="screenshots/dash5.png" alt="Check-in forth step">
+                <h4>Add new Resident</h4>
+                <img src="screenshots/dash3.png" alt="Check-in Dashboard">
+                <h4>View Residents Info</h4>
+                <img src="screenshots/dash7.png" alt="Check-in Dashboard">
+                <h4>Add new employee</h4>
+                <img src="screenshots/dash8.png" alt="Check-in Dashboard">
+                <h4>View Visitors who have not exited the premises</h4>
+                <img src="screenshots/dash9.png" alt="Check-in Dashboard">
+                <h4>View Visitor infomation</h4>
+                <img src="screenshots/dash10.png" alt="Check-in Dashboard">
+                
+
+            </section>
+            <section>
+                <h3 id="smtp">Literature</h3>
+                <strong>Which software development approach was used?</strong><br>
+
+                <p><strong><b>Agile Method</b></strong> is used in the development of the system Method.Agile is a process by which a team can manage a project by breaking it up into several stages and involving constant collaboration with stakeholders and continuous improvement and iteration at every stage.</p>
+                <strong>The General Principles of the Agile Method</strong>
+                are as follows.
+                <ul>
+                    <li>Satisfy the client and continually develop software.</li>
+                    <li>Face-to-face communication is the best way to transfer information to and from a team.</li>
+                    <li>Simplicity is considered to be the art of maximizing the work that is not done, and it is essential.</li>
+                    <li>Working software is the primary measurement of progress.</li>
+                </ul>
+                <strong>The system's Data flow diagram is shown below</strong>
+                <section>
+                 <img src="screenshots/dfd.png" alt="Data flow diagram">
+                </section>
+
+
+                <h3 id="own-smtp-server">Own SMTP Server</h3>
+                <strong>Using your own or some SMTP server</strong>
+                <strong>Admin panel setup</strong>
+                <ul>
+                    <li>Go to your <strong>Server</strong> -&gt; <strong>root</strong> -&gt; <strong>location</strong> -&gt; <strong>C:\xampp\php\php.ini`</strong></li>
+                    <li>Using notepad '<strong>search</strong>', '<strong>[mail function] in the file</strong>
+                </ul>
+                <strong>Or use <code>/.env</code> file setup</strong>
+                <ul>
+                    <li>Login to your FTP account.</li>
+                    <li>Open and Edit <code>/.env</code> file.</li>
+                    <li>Copy and paste your server smtp details in the file.</li>
+                </ul>
+                It will look something like this.
+                <pre>
+<code>
+MAIL_DRIVER=smtp
+MAIL_HOST=your-mail-host
+MAIL_PORT=your-mail-port
+MAIL_USERNAME=your-mail-username
+MAIL_PASSWORD=your-mail-password
+MAIL_ENCRYPTION=your-mail-encryption
+</code>
+                </pre>
+                <ul>
+                    <li>Replace <code>your-mail-host</code>, <code>your-mail-port</code>, <code>your-mail-username</code>, <code>your-mail-password</code> and <code>your-mail-encryption</code>.</li>
+                    <li>Save and Upload the file</li>
+                    <li>You are done.</li>
+                </ul>
+                NOTE: The <code>/.env</code> file settings override those of the admin panel.
+
+                <br><br>
+                <div class="alert alert-info" role="alert">
+                    <strong>Note:</strong>
+                    Don't forget to change your sender email address in your <strong>Admin panel</strong> -> <strong>Setup</strong> -&gt; <strong>General Settings</strong> -&gt; <strong>Mail</strong> -> <strong>Transactional Email Sender</strong> to match it with an allowed email address of your SMTP server.
+                </div>
+            </section>
+
+            <h3 id="contact"> How To Contact Us?</h3>
+            <a href="mailto:kopakaebabini@gmail.com"><img src="img/website.png" width="50" height="50"></a>
+            <a href="mailto:kopakaebabini@gmail.com"><img src="img/website.png" width="50" height="50"></a>
+
+          </div>
+        </div>
+</section>
+<section class="vibrant centered">
+  <div class="">
+    <img src="img/website.png" alt="RVMS" width="220" height="30">
+    <h4> This documentation is provided by <a href="https://www.linkedin.com/in/albert-kopakae-6ba704183/" target="_blank">Albert Kopakae</a>. </h4>
+  </div>
+</section>
+<footer>
+  <div class="">
+    <p> Copyright RVMS| &copy; 2020. All Rights Reserved.</p>
+  </div>
+</footer>
+</div>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/prettify/prettify.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+<script src="js/layout.js"></script>
+</body>
+</html>
